@@ -1,0 +1,224 @@
+@keyframes fadeInFromBottom {
+    from {
+        opacity: 0;
+        transform: translateY(-20%, -5);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(-50%, -5);
+    }
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    backdrop-filter: blur(4px);
+}
+
+.modal-hero {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    border-radius: 12px;
+    background: #FFF;
+    padding: 16px;
+    max-height: 80vh;
+    width: 600px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    animation: fadeInFromBottom 0.5s ease forwards;
+
+    .close-button {
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    .close-button:hover {
+        cursor: pointer;
+    }
+
+    .content_wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        align-self: stretch;
+
+        .box {
+            background: rgb(240, 240, 240);
+            display: flex;
+            width: -webkit-fill-available;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 8px;
+            padding: 20px;
+
+            .title {
+                display: flex;
+                flex-direction: column;
+                gap: 4px;
+
+                h1 {
+                    color: #1f1f1f;
+                    font-family: 'Geomanist';
+                    font-size: 22px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                }
+
+                p {
+                    color: #4D5858;
+                    font-family: 'Geomanist';
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+            }
+
+            button {
+                display: flex;
+                padding: 8px 20px;
+                justify-content: center;
+                align-items: center;
+                gap: 6px;
+                border-radius: 200px;
+                border: none;
+                background: var(--OCBC-Red, #E30613);
+                color: var(--White, #FFF);
+                font-family: 'Geomanist';
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+
+                img {
+                    width: 20px;
+                    height: auto;
+                }
+            }
+
+            button:hover {
+                background: #ce0411;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 810px){
+    .modal-hero {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1000;
+        border-radius: 12px;
+        background: #FFF;
+        padding: 16px;
+        max-height: 80vh;
+        width: 80%;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    
+        animation: fadeInFromBottom 0.5s ease forwards;
+    
+        .close-button {
+            display: flex;
+            width: 100%;
+            justify-content: flex-end;
+        }
+    
+        .close-button:hover {
+            cursor: pointer;
+        }
+    
+        .content_wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 8px;
+            align-self: stretch;
+    
+            .box {
+                background: rgb(240, 240, 240);
+                display: flex;
+                width: -webkit-fill-available;
+                align-items: flex-start;
+                gap: 20px;
+                justify-content: space-between;
+                border-radius: 8px;
+                padding: 20px;
+                flex-direction: column;
+    
+                .title {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 4px;
+    
+                    h1 {
+                        color: #1f1f1f;
+                        font-family: 'Geomanist';
+                        font-size: 22px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                    }
+    
+                    p {
+                        color: #4D5858;
+                        font-family: 'Geomanist';
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                    }
+                }
+    
+                button {
+                    display: flex;
+                    padding: 8px 20px;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 6px;
+                    width: 100%;
+                    border-radius: 200px;
+                    border: none;
+                    background: var(--OCBC-Red, #E30613);
+                    color: var(--White, #FFF);
+                    font-family: 'Geomanist';
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+    
+                    img {
+                        width: 20px;
+                        height: auto;
+                    }
+                }
+    
+                button:hover {
+                    background: #ce0411;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

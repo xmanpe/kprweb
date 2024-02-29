@@ -1,0 +1,297 @@
+.nav_padding {
+    display: flex;
+    top: 12px;
+    position: fixed;
+    padding: 0px 160px;
+    width: -webkit-fill-available;
+    z-index: 1000;
+
+    .nav_section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 8px;
+        width: 100%;
+        transition: all 0.3s ease;
+    
+        img {
+            width: 100px;
+            height: auto;
+        }
+    
+        button {
+            display: none;
+            padding: 12px 24px;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            border-radius: 200px;
+            border: none;
+            background: var(--OCBC-Red, #E30613);
+            color: var(--White, #FFF);
+            font-family: 'Geomanist';
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        button:hover {
+            background: #ce0411;
+            cursor: pointer;
+        }
+    
+        &.scrolled {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(20px);
+            padding: 6px 6px 6px 24px;
+            border: 1px solid rgba(0, 0, 0, 0.067);
+            border-radius: 120px;
+            box-shadow: 0px 5px 48px 0px rgba(0, 0, 0, 0.11);
+    
+            button {
+                display: flex;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1440px){
+    .nav_padding {
+        // display: flex;
+        // top: 12px;
+        // position: fixed;
+        padding: 0px 100px;
+        // width: -webkit-fill-available;
+        // z-index: 1000;
+    
+        .nav_section {
+            // display: flex;
+            // align-items: center;
+            // justify-content: space-between;
+            // padding-top: 8px;
+            // width: 100%;
+            // transition: all 0.3s ease;
+        
+            img {
+                // width: 100px;
+                // height: auto;
+            }
+        
+            button {
+                // display: none;
+                // padding: 12px 24px;
+                // justify-content: center;
+                // align-items: center;
+                // gap: 8px;
+                // border-radius: 200px;
+                // border: none;
+                // background: var(--OCBC-Red, #E30613);
+                // color: var(--White, #FFF);
+                // font-family: 'Geomanist';
+                // font-size: 18px;
+                // font-style: normal;
+                // font-weight: 400;
+                // line-height: normal;
+            }
+    
+            button:hover {
+                // background: #ce0411;
+                // cursor: pointer;
+            }
+        
+            &.scrolled {
+                // background: rgba(255, 255, 255, 0.85);
+                // backdrop-filter: blur(20px);
+                // padding: 6px 6px 6px 24px;
+                // border: 1px solid rgba(0, 0, 0, 0.067);
+                // border-radius: 120px;
+                // box-shadow: 0px 5px 48px 0px rgba(0, 0, 0, 0.11);
+        
+                button {
+                    // display: flex;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .nav_padding {
+        // display: flex;
+        // top: 12px;
+        // position: fixed;
+        padding: 0px 60px;
+        // width: -webkit-fill-available;
+        // z-index: 1000;
+    
+        .nav_section {
+            // display: flex;
+            // align-items: center;
+            // justify-content: space-between;
+            // padding-top: 8px;
+            // width: 100%;
+            // transition: all 0.3s ease;
+        
+            img {
+                // width: 100px;
+                // height: auto;
+            }
+        
+            button {
+                // display: none;
+                // padding: 12px 24px;
+                // justify-content: center;
+                // align-items: center;
+                // gap: 8px;
+                // border-radius: 200px;
+                // border: none;
+                // background: var(--OCBC-Red, #E30613);
+                // color: var(--White, #FFF);
+                // font-family: 'Geomanist';
+                // font-size: 18px;
+                // font-style: normal;
+                // font-weight: 400;
+                // line-height: normal;
+            }
+    
+            button:hover {
+                // background: #ce0411;
+                // cursor: pointer;
+            }
+        
+            &.scrolled {
+                // background: rgba(255, 255, 255, 0.85);
+                // backdrop-filter: blur(20px);
+                // padding: 6px 6px 6px 24px;
+                // border: 1px solid rgba(0, 0, 0, 0.067);
+                // border-radius: 120px;
+                // box-shadow: 0px 5px 48px 0px rgba(0, 0, 0, 0.11);
+        
+                button {
+                    // display: flex;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 810px){
+    .nav_padding {
+        // display: flex;
+        // top: 12px;
+        // position: fixed;
+        padding: 0px 40px;
+        // width: -webkit-fill-available;
+        // z-index: 1000;
+    
+        .nav_section {
+            // display: flex;
+            // align-items: center;
+            // justify-content: space-between;
+            // padding-top: 8px;
+            // width: 100%;
+            // transition: all 0.3s ease;
+        
+            img {
+                // width: 100px;
+                // height: auto;
+            }
+        
+            button {
+                // display: none;
+                padding: 10px 24px;
+                // justify-content: center;
+                // align-items: center;
+                // gap: 8px;
+                // border-radius: 200px;
+                // border: none;
+                // background: var(--OCBC-Red, #E30613);
+                // color: var(--White, #FFF);
+                // font-family: 'Geomanist';
+                font-size: 16px;
+                // font-style: normal;
+                // font-weight: 400;
+                // line-height: normal;
+            }
+    
+            button:hover {
+                // background: #ce0411;
+                // cursor: pointer;
+            }
+        
+            &.scrolled {
+                // background: rgba(255, 255, 255, 0.85);
+                // backdrop-filter: blur(20px);
+                // padding: 6px 6px 6px 24px;
+                // border: 1px solid rgba(0, 0, 0, 0.067);
+                // border-radius: 120px;
+                // box-shadow: 0px 5px 48px 0px rgba(0, 0, 0, 0.11);
+        
+                button {
+                    // display: flex;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 560px){
+    .nav_padding {
+        // display: flex;
+        // top: 12px;
+        // position: fixed;
+        padding: 0px 16px;
+        // width: -webkit-fill-available;
+        // z-index: 1000;
+    
+        .nav_section {
+            // display: flex;
+            // align-items: center;
+            // justify-content: space-between;
+            // padding-top: 8px;
+            // width: 100%;
+            // transition: all 0.3s ease;
+        
+            img {
+                // width: 100px;
+                // height: auto;
+            }
+        
+            button {
+                // display: none;
+                padding: 10px 24px;
+                // justify-content: center;
+                // align-items: center;
+                // gap: 8px;
+                // border-radius: 200px;
+                // border: none;
+                // background: var(--OCBC-Red, #E30613);
+                // color: var(--White, #FFF);
+                // font-family: 'Geomanist';
+                font-size: 16px;
+                // font-style: normal;
+                // font-weight: 400;
+                // line-height: normal;
+            }
+    
+            button:hover {
+                // background: #ce0411;
+                // cursor: pointer;
+            }
+        
+            &.scrolled {
+                // background: rgba(255, 255, 255, 0.85);
+                // backdrop-filter: blur(20px);
+                // padding: 6px 6px 6px 24px;
+                // border: 1px solid rgba(0, 0, 0, 0.067);
+                // border-radius: 120px;
+                // box-shadow: 0px 5px 48px 0px rgba(0, 0, 0, 0.11);
+        
+                button {
+                    // display: flex;
+                }
+            }
+        }
+    }
+}

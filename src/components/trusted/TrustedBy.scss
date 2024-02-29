@@ -1,0 +1,239 @@
+.trusted_section {
+    display: flex;
+    padding: 0px 160px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    background: linear-gradient(180deg, rgba(227, 6, 19, 0.88) 0%, rgba(167, 14, 19, 0.88) 100%), url('../../images/Jakarta.png'), lightgray 50% / cover no-repeat;
+    min-height: 100vh;
+
+    p {
+        color: var(--White, #FFF);
+        text-align: center;
+        font-family: 'Geomanist';
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .logo_wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        align-content: flex-start;
+        gap: 32px;
+        align-self: stretch;
+        flex-wrap: wrap;
+        
+        .the-logo {
+            padding: 20px;
+            border-radius: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+            background: rgba(255, 255, 255, 0.802);
+
+            img {
+                height: 100%;
+                width: fit-content;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1440px){
+    .trusted_section {
+        // display: flex;
+        padding: 0px 100px;
+        // justify-content: center;
+        // flex-direction: column;
+        // align-items: center;
+        // gap: 40px;
+        // background: linear-gradient(180deg, rgba(227, 6, 19, 0.88) 0%, rgba(167, 14, 19, 0.88) 100%), url('../../images/Jakarta.png'), lightgray 50% / cover no-repeat;
+        // min-height: 100vh;
+    
+        p {
+            // color: var(--White, #FFF);
+            // text-align: center;
+            // font-family: 'Geomanist';
+            // font-size: 22px;
+            // font-style: normal;
+            // font-weight: 400;
+            // line-height: normal;
+        }
+    
+        .logo_wrapper {
+            // display: flex;
+            // justify-content: center;
+            // align-items: flex-start;
+            // align-content: flex-start;
+            // gap: 32px;
+            // align-self: stretch;
+            // flex-wrap: wrap;
+            
+            .the-logo {
+                // padding: 20px;
+                // border-radius: 12px;
+                // display: flex;
+                // justify-content: center;
+                // align-items: center;
+                // width: 200px;
+                // background: rgba(255, 255, 255, 0.802);
+    
+                img {
+                    // width: fit-content;
+                    // object-fit: cover;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .trusted_section {
+        // display: flex;
+        padding: 0px 60px;
+        // justify-content: center;
+        // flex-direction: column;
+        // align-items: center;
+        // gap: 40px;
+        // background: linear-gradient(180deg, rgba(227, 6, 19, 0.88) 0%, rgba(167, 14, 19, 0.88) 100%), url('../../images/Jakarta.png'), lightgray 50% / cover no-repeat;
+        // min-height: 100vh;
+    
+        p {
+            // color: var(--White, #FFF);
+            // text-align: center;
+            // font-family: 'Geomanist';
+            // font-size: 22px;
+            // font-style: normal;
+            // font-weight: 400;
+            // line-height: normal;
+        }
+    
+        .logo_wrapper {
+            // display: flex;
+            // justify-content: center;
+            // align-items: flex-start;
+            // align-content: flex-start;
+            gap: 24px;
+            // align-self: stretch;
+            // flex-wrap: wrap;
+            
+            .the-logo {
+                // padding: 20px;
+                // border-radius: 12px;
+                // display: flex;
+                // justify-content: center;
+                // align-items: center;
+                width: 160px;
+                // background: rgba(255, 255, 255, 0.802);
+    
+                img {
+                    width: 100%;
+                    // width: fit-content;
+                    // object-fit: cover;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 810px){
+    .trusted_section {
+        // display: flex;
+        padding: 0px 40px;
+        // justify-content: center;
+        // flex-direction: column;
+        // align-items: center;
+        // gap: 40px;
+        // background: linear-gradient(180deg, rgba(227, 6, 19, 0.88) 0%, rgba(167, 14, 19, 0.88) 100%), url('../../images/Jakarta.png'), lightgray 50% / cover no-repeat;
+        // min-height: 100vh;
+    
+        p {
+            // color: var(--White, #FFF);
+            // text-align: center;
+            // font-family: 'Geomanist';
+            // font-size: 22px;
+            // font-style: normal;
+            // font-weight: 400;
+            // line-height: normal;
+        }
+    
+        .logo_wrapper {
+            // display: flex;
+            // justify-content: center;
+            // align-items: flex-start;
+            // align-content: flex-start;
+            gap: 24px;
+            // align-self: stretch;
+            // flex-wrap: wrap;
+            
+            .the-logo {
+                // padding: 20px;
+                // border-radius: 12px;
+                // display: flex;
+                // justify-content: center;
+                // align-items: center;
+                width: 120px;
+                // background: rgba(255, 255, 255, 0.802);
+    
+                img {
+                    // width: 100%;
+                    // object-fit: cover;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 560px){
+    .trusted_section {
+        // display: flex;
+        padding: 0px 16px;
+        // justify-content: center;
+        // flex-direction: column;
+        // align-items: center;
+        gap: 20px;
+        // background: linear-gradient(180deg, rgba(227, 6, 19, 0.88) 0%, rgba(167, 14, 19, 0.88) 100%), url('../../images/Jakarta.png'), lightgray 50% / cover no-repeat;
+        // min-height: 100vh;
+    
+        p {
+            // color: var(--White, #FFF);
+            // text-align: center;
+            // font-family: 'Geomanist';
+            font-size: 18px;
+            // font-style: normal;
+            // font-weight: 400;
+            // line-height: normal;
+        }
+    
+        .logo_wrapper {
+            // display: flex;
+            // justify-content: center;
+            // align-items: flex-start;
+            // align-content: flex-start;
+            gap: 8px;
+            // align-self: stretch;
+            // flex-wrap: wrap;
+            
+            .the-logo {
+                // padding: 20px;
+                // border-radius: 12px;
+                // display: flex;
+                // justify-content: center;
+                // align-items: center;
+                width: 60px;
+                // background: rgba(255, 255, 255, 0.802);
+    
+                img {
+                    // width: 100%;
+                    // object-fit: cover;
+                }
+            }
+        }
+    }
+}
