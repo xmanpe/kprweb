@@ -13,7 +13,7 @@ const Navigation = () => {
     useEffect(() => {
         const handleScroll = () => {
             const scrollPosition = window.scrollY;
-            if (scrollPosition > 1) { // Adjust the scroll position threshold as needed
+            if (scrollPosition > 1) {
                 setScrolled(true);
             } else {
                 setScrolled(false);

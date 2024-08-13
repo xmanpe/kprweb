@@ -1,21 +1,12 @@
-// import react
 import React, { useState, useRef } from 'react';
-
-// import css
 import './Kpr.scss';
-
-// import images
 import KPREasyStart from '../../images/KPR/KPR Easy Start.png';
 import KPRKendali from '../../images/KPR/KPR Kendali.png';
-
-// import svgs
 import CircleCheck from '../../svgs/Circle Check.svg';
-
-// import components
-import EasyStart from './easy start/EasyStart';
+import EasyStart from './easystart/EasyStart';
 import Kendali from './kendali/Kendali';
 
-const Kpr = () => {
+const Kpr = ({ onOptionChange }) => {
     const options = [
         {
             id: 'easyStart',
@@ -44,7 +35,8 @@ const Kpr = () => {
     const [selectedOption, setSelectedOption] = useState('easyStart');
 
     const handleOptionClick = (option) => {
-        setSelectedOption(prevOption => (prevOption === option ? null : option));
+        setSelectedOption(option);
+        onOptionChange(option); // Call the onOptionChange function when the option changes
     };
 
     const kprSectionRef = useRef(null);
@@ -57,8 +49,7 @@ const Kpr = () => {
         <>
             <section className={`kpr_section`} id='kpr_section' ref={kprSectionRef}>
                 <div className="heading">
-                    <h1>Detail</h1>
-                    <p>Klik KPR berikut untuk melihat informasi lebih detail.</p>
+                    <p>Klik KPR OCBC berikut ini untuk melihat informasi lebih detail!</p>
                 </div>
                 <div className="option_wrapper">
                     {options.map(option => (
@@ -79,8 +70,8 @@ const Kpr = () => {
                     ))}
                 </div>
             </section>
-        {selectedOption === 'easyStart' && <EasyStart />}
-        {selectedOption === 'kendali' && <Kendali />}
+            {selectedOption === 'easyStart' && <EasyStart />}
+            {selectedOption === 'kendali' && <Kendali />}
         </>
     );
 };

@@ -1,11 +1,14 @@
 .trusted_section {
     display: flex;
-    padding: 0px 160px;
+    padding: 100px 160px;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     gap: 40px;
     background: linear-gradient(180deg, rgba(227, 6, 19, 0.88) 0%, rgba(167, 14, 19, 0.88) 100%), url('../../images/Jakarta.png'), lightgray 50% / cover no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     min-height: 100vh;
 
     p {
@@ -48,7 +51,7 @@
 @media screen and (max-width: 1440px){
     .trusted_section {
         // display: flex;
-        padding: 0px 100px;
+        padding: 100px 100px;
         // justify-content: center;
         // flex-direction: column;
         // align-items: center;
@@ -96,7 +99,7 @@
 @media screen and (max-width: 1200px){
     .trusted_section {
         // display: flex;
-        padding: 0px 60px;
+        padding: 100px 60px;
         // justify-content: center;
         // flex-direction: column;
         // align-items: center;
@@ -145,7 +148,7 @@
 @media screen and (max-width: 810px){
     .trusted_section {
         // display: flex;
-        padding: 0px 40px;
+        padding: 100px 40px;
         // justify-content: center;
         // flex-direction: column;
         // align-items: center;
@@ -193,7 +196,7 @@
 @media screen and (max-width: 560px){
     .trusted_section {
         // display: flex;
-        padding: 0px 16px;
+        padding: 100px 16px;
         // justify-content: center;
         // flex-direction: column;
         // align-items: center;

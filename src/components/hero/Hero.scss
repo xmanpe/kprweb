@@ -1,9 +1,22 @@
+// @keyframes subtleMovement {
+//     0% {
+//         background-position: left;
+//     }
+//     50% {
+//         background-position: calc(center + 100px) center; /* Adjust the movement distance as needed */
+//     }
+//     100% {
+//         background-position: left;
+//     }
+// }
+
 .hero_section {
     display: flex;
     height: 100vh;
 
     .left-hero {
         background: url('../../images/Hero/Gradient\ Red.png');
+        // background: white;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -13,6 +26,7 @@
         flex-direction: column;
         gap: 80px;
         width: 70%;
+        animation: subtleMovement 20s infinite linear;
 
         .content-hero {
             display: flex;
@@ -93,6 +107,9 @@
                 display: flex;
                 align-items: center;
                 gap: 16px;
+                padding: 2px;
+                border-radius: 100px;
+                border: 3px solid #E30613;
 
                 button {
                     display: flex;
@@ -101,15 +118,14 @@
                     align-items: center;
                     gap: 8px;
                     border-radius: 200px;
-    
                     font-family: 'Geomanist';
-                    font-size: 18px;
+                    font-size: 20px;
                     font-style: normal;
                     font-weight: 400;
                     line-height: normal;
     
                     img {
-                        width: 20px;
+                        width: 22px;
                         height: auto;
                     }
                 }
@@ -123,6 +139,7 @@
                 .ajukan:hover {
                     cursor: pointer;
                     background: #ce0411;
+                    gap: 12px;
                 }
 
                 .pelajari {
@@ -175,14 +192,17 @@
         justify-content: flex-end;
         align-items: flex-start;
         align-self: stretch;
-        border-left: 8px solid var(--OCBC-Red, #E30613);
+        border-left: 6px solid var(--OCBC-Red, #E30613);
         overflow: hidden;
+        position: relative;
 
         img {
-            width: auto;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
             height: 100%;
-            position: relative;
-            left: 140%;
+            object-fit: cover;
         }
     }
 }
@@ -372,7 +392,6 @@
                 // width: auto;
                 // height: 100%;
                 // position: relative;
-                left: 180%;
             }
         }
     }

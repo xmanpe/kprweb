@@ -5,7 +5,7 @@ import { useState, useRef } from 'react';
 import './Hero.scss';
 
 // import images
-import HeroImage from '../../images/Hero/Hero Banner.jpeg';
+import HeroImage from '../../images/Hero/Hero Banner.JPG';
 
 // import svgs
 import RightArrow from '../../svgs/Right Arrow.svg';
@@ -51,7 +51,7 @@ const Hero = () => {
                             </div>
                         </div>
                         <div className='button_wrapper'>
-                            <button className='ajukan' onClick={handleOpenModal}>
+                            <button className='ajukan' onClick={() => window.open("https://www.ocbc.id/id/kalkulator/kepemilikan-rumah/form-kpr", "_blank")}>
                                 Ajukan Sekarang
                                 <img src={RightArrow} alt="Right Arrow" />
                             </button>

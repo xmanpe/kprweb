@@ -3,7 +3,9 @@
     top: 12px;
     position: fixed;
     padding: 0px 160px;
-    width: -webkit-fill-available;
+    justify-content: flex-start;
+    // width: -webkit-fill-available;
+    width: 100%;
     z-index: 1000;
 
     .nav_section {
@@ -11,7 +13,8 @@
         align-items: center;
         justify-content: space-between;
         padding-top: 8px;
-        width: 100%;
+        gap: 40px;
+        // width: 100%;
         transition: all 0.3s ease;
     
         img {
@@ -21,14 +24,14 @@
     
         button {
             display: none;
-            padding: 12px 24px;
+            padding: 10px 20px;
             justify-content: center;
             align-items: center;
             gap: 8px;
             border-radius: 200px;
-            border: none;
-            background: var(--OCBC-Red, #E30613);
-            color: var(--White, #FFF);
+            border: 2px solid #E30613;
+            background: transparent;
+            color: #E30613;
             font-family: 'Geomanist';
             font-size: 18px;
             font-style: normal;
@@ -37,7 +40,8 @@
         }
 
         button:hover {
-            background: #ce0411;
+            background: #E30613;
+            color: white;
             cursor: pointer;
         }
     
@@ -134,7 +138,7 @@
             // transition: all 0.3s ease;
         
             img {
-                // width: 100px;
+                width: 80px;
                 // height: auto;
             }
         
@@ -194,7 +198,7 @@
             // transition: all 0.3s ease;
         
             img {
-                // width: 100px;
+                // width: 60px;
                 // height: auto;
             }
         
@@ -251,6 +255,7 @@
             // justify-content: space-between;
             // padding-top: 8px;
             // width: 100%;
+            gap: 20px;
             // transition: all 0.3s ease;
         
             img {
